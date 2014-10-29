@@ -1,0 +1,9 @@
+v0.1.0, 2014-03-12 -- Initial release
+v0.1.1, 2014-05-10 -- Fix a bug
+v0.2.0, 2014-06-10 -- Fix a bug
+v0.2.3, 2014-09-22 -- add cdnjs, add pathway name in the html output, solve the p-value precision problem
+v0.3.0, 2014-09-23 -- support for both python2 and python3
+v0.4.0, 2014-10-15 -- support reading gene lists inside python, add a parameter "glist" in run.py
+v0.4.1, 2014-10-15 -- return enrich result for next analysis
+v0.4.2, 2014-10-15 -- fix a bug of gene id, new format of test-output, change the number of bacground genes
+
