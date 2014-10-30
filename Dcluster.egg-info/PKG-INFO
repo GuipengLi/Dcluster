@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: Dcluster
-Version: 0.2.0
+Version: 0.3.0
 Summary: A Python package for Clustering by fast search and find of density peaks
 Home-page: https://github.com/GuipengLi/Dcluster
 Author: Guipeng Li
