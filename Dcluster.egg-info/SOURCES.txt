@@ -1,0 +1,16 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+Dcluster/DCplot.py
+Dcluster/__init__.py
+Dcluster/mds.py
+Dcluster/readfile.py
+Dcluster/rhodelta.py
+Dcluster/run.py
+Dcluster.egg-info/PKG-INFO
+Dcluster.egg-info/SOURCES.txt
+Dcluster.egg-info/dependency_links.txt
+Dcluster.egg-info/requires.txt
+Dcluster.egg-info/top_level.txt
