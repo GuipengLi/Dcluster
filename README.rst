@@ -20,7 +20,7 @@ Or, you can download the source code at `Github <https://github.com/GuipengLi/Dc
 
 Usage
 -----
-The only input is the distance metrics between observations. See the test.dat. Dcluster supports interacive clustering based on decision graph::
+The only input is the distance metrics between observations. See the test.dat. Dcluster supports interacive clustering based on Decision Graph::
 
     import Dcluster as dcl
     filein="test.dat"
@@ -29,7 +29,7 @@ The only input is the distance metrics between observations. See the test.dat. D
 
 Test data
 ---------
-See the test.dat in test/
+See the test.dat in test/. One can choose different cluster centers based on Decision Graph.
 
 .. image:: test/CLUSTER_ASSIGNATION.png
 .. image:: test/CLUSTER_ASSIGNATION_2.png
