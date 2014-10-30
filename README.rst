@@ -29,7 +29,7 @@ The only input is the distance metrics between observations. See the test.dat. D
 
 Test data
 ---------
-See the test.dat in data/
+See the test.dat in test/
 
 
 Contact
