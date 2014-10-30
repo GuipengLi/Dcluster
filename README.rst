@@ -25,7 +25,7 @@ The only input is the distance metrics between observations. See the test.dat. D
 
     import Dcluster as dcl
     filein="test.dat"
-    dcl.run(fi=filein)
+    dcl.run(fi=filein, sep=' ')
 
 
 Test data

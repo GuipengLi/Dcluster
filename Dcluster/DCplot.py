@@ -99,8 +99,6 @@ def DCplot(dist, XY, ND, rho, delta,ordrho,dc,nneigh, rhomin,deltamin):
             return()
 
     while 1:
-        DefaultSize = f.get_size_inches()
-        print('DefaultSize: %d, %d' %(DefaultSize[0], DefaultSize[1] ) )
         f.show()
         cid = f.canvas.mpl_connect('button_press_event', onclick)
         print('\n\nDrag the mouse pointer at a cutoff position in figure DECISION GRAPH and press   OR   Press key n to quit')

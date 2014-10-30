@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: Dcluster
-Version: 0.3.0
+Version: 0.4.0
 Summary: A Python package for Clustering by fast search and find of density peaks
 Home-page: https://github.com/GuipengLi/Dcluster
 Author: Guipeng Li
@@ -33,15 +33,15 @@ Description: Clustering by fast search and find of density peaks
         
             import Dcluster as dcl
             filein="test.dat"
-            dcl.run(fi=filein)
+            dcl.run(fi=filein, sep=' ')
         
         
         Test data
         ---------
         See the test.dat in test/. One can choose different cluster centers based on Decision Graph. And please first press key 'n' then 'Enter' to quit. Result will be saved automatically.
         
-        .. image:: https://github.com/GuipengLi/Dcluster/tree/master/test/CLUSTER_ASSIGNATION.png
-        .. image:: https://github.com/GuipengLi/Dcluster/tree/master/test/CLUSTER_ASSIGNATION_2.png
+        .. image:: test/CLUSTER_ASSIGNATION.png
+        .. image:: test/CLUSTER_ASSIGNATION_2.png
         
         
         Contact

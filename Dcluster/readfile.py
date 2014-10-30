@@ -1,6 +1,6 @@
 import numpy as np
 
-def readfile(file, dimensions = 2,sep='\t'):
+def readfile(file, dimensions = 2,sep=' '):
     '''
     Input file format: 3 columns ,seperated by ' '
     Column 1: element1
