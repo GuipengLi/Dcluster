@@ -31,6 +31,7 @@ Test data
 ---------
 See the test.dat in test/
 
+![Alt text](test/CLUSTER_ASSIGNATION.png?raw=true "Demo Figure")
 
 Contact
 -------
