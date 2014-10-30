@@ -31,7 +31,7 @@ Test data
 ---------
 See the test.dat in test/
 
-![Alt text](github.com/GuipengLi/Dcluster/test/CLUSTER_ASSIGNATION.png?raw=true "Demo Figure")
+![Alt text](GuipengLi.github.com/Dcluster/test/CLUSTER_ASSIGNATION.png)
 
 Contact
 -------
