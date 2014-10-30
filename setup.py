@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name = 'Dcluster',
     packages = ['Dcluster'], # this must be the same as the name above
-    version = '0.2.0',
+    version = '0.3.0',
     description = 'A Python package for Clustering by fast search and find of density peaks',
     author = 'Guipeng Li',
     author_email = 'guipenglee@gmail.com',

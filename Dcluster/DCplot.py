@@ -4,12 +4,14 @@ import numpy as np
 
 
 def plot1(rho, delta):
-    f, axarr = plt.subplots(3,1)
+    f, axarr = plt.subplots(1,3)
     axarr[0].set_title('DECISION GRAPH')
     axarr[0].scatter(rho, delta, alpha=0.6,c='white')
     axarr[0].set_xlabel(r'$\rho$')
     axarr[0].set_ylabel(r'$\delta$')
+    axarr[1].set_title('DECISION GRAPH 2')
     axarr[1].scatter(np.arange(len(rho))+1, -np.sort(-rho*delta), alpha=0.6,c='white')
+    axarr[1].set_xlabel('Sorted Sample')
     axarr[1].set_ylabel(r'$\rho*\delta$')
     return(f,axarr)
 
@@ -89,7 +91,7 @@ def DCplot(dist, XY, ND, rho, delta,ordrho,dc,nneigh, rhomin,deltamin):
             clusters = np.array([np.arange(ND)+1,cl+1,halo+1]).T
             np.savetxt('CLUSTER_ASSIGNATION_%.2f_%.2f_.txt'%(rhomin,deltamin),clusters,fmt='%d\t%d\t%d')
             print('Result are saved in file CLUSTER_ASSIGNATION_%.2f_%.2f_.txt'%(rhomin,deltamin))
-            print('\n\nSelect a cutoff based on the DECISION GRAPH Or Press key n to quit\n')
+            print('\n\nDrag the mouse pointer at a cutoff position in figure DECISION GRAPH and press   OR   Press key n to quit')
             ################# plot the data points with cluster labels
             cmap = cm.rainbow(np.linspace(0, 1, NCLUST))
             plot2(axarr,rho, delta,cmap,cl,icl,XY,NCLUST)
@@ -97,13 +99,17 @@ def DCplot(dist, XY, ND, rho, delta,ordrho,dc,nneigh, rhomin,deltamin):
             return()
 
     while 1:
+        DefaultSize = f.get_size_inches()
+        print('DefaultSize: %d, %d' %(DefaultSize[0], DefaultSize[1] ) )
         f.show()
         cid = f.canvas.mpl_connect('button_press_event', onclick)
-        print('\nSelect a cutoff based on the DECISION GRAPH Or Press key n to quit')
+        print('\n\nDrag the mouse pointer at a cutoff position in figure DECISION GRAPH and press   OR   Press key n to quit')
         nID = input()
         if nID=='n':
-            print('Saving the figure in file CLUSTER_ASSIGNATION_%.2f_%.2f_.png'%(rhomin,deltamin))
-            plt.savefig('CLUSTER_ASSIGNATION_%.2f_%.2f_.png'%(rhomin,deltamin), dpi=600)
+            f.canvas.mpl_disconnect(cid)
+            print('Saving the figure in file CLUSTER_ASSIGNATION.png')
+            figure = plt.gcf() # get current figure
+            figure.set_size_inches(24, 8)
+            figure.savefig('CLUSTER_ASSIGNATION.png', dpi=300)
             break
-
 
