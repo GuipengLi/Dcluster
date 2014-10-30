@@ -32,6 +32,7 @@ Test data
 See the test.dat in test/
 
 .. image:: test/CLUSTER_ASSIGNATION.png
+.. image:: test/CLUSTER_ASSIGNATION_2.png
 
 Contact
 -------
