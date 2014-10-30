@@ -6,16 +6,17 @@ This Python package implements the clustering algorithm  proposed by Alex Rodrig
 Installation
 ------------
 This version is for both python2 and python3.
-The first step is to install Python. Python is available from the `Python project page <https://www.python.org/>`_ . The next step is install sharepathway.
+The first step is to install Python. Python is available from the `Python project page <https://www.python.org/>`_ . Dcluster depend on `numpy <http://www.numpy.org/>`_ and `matplotlib <http://matplotlib.org>`_. The next step is to install Dcluster.
 
-Install from PyPi using `pip <http://www.pip-installer.org/en/latest/>`_, a
+You can download the source code at `Github <https://github.com/GuipengLi/Dcluster>`_  or at `PyPi <https://pypi.python.org/pypi/Dcluster>`_ for Dcluster, and then run::
+
+    $ python setup.py install
+
+
+Or install from PyPi using `pip <http://www.pip-installer.org/en/latest/>`_, a
 package manager for Python::
 
     $ pip install Dcluster
-
-Or, you can download the source code at `Github <https://github.com/GuipengLi/Dcluster>`_  or at `PyPi <https://pypi.python.org/pypi/Dcluster>`_ for Dcluster, and then run::
-
-    $ python setup.py install
 
 
 Usage
@@ -29,10 +30,11 @@ The only input is the distance metrics between observations. See the test.dat. D
 
 Test data
 ---------
-See the test.dat in test/. One can choose different cluster centers based on Decision Graph.
+See the test.dat in test/. One can choose different cluster centers based on Decision Graph. And please first press key 'n' then 'Enter' to quit. Result will be saved automatically.
 
 .. image:: test/CLUSTER_ASSIGNATION.png
 .. image:: test/CLUSTER_ASSIGNATION_2.png
+
 
 Contact
 -------
