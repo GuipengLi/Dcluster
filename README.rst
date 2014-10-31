@@ -31,8 +31,6 @@ Test data
 ---------
 See the test.dat in test/. One can choose different cluster centers based on Decision Graph. And please first press key 'n' then 'Enter' to quit. Result will be saved automatically.
 
-.. image:: test/CLUSTER_ASSIGNATION.png
-.. image:: test/CLUSTER_ASSIGNATION_2.png
 
 
 Contact

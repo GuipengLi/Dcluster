@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import numpy as np
 
+try:
+   input = raw_input
+except NameError:
+   pass
 
 def plot1(rho, delta):
     f, axarr = plt.subplots(1,3)
@@ -98,10 +102,11 @@ def DCplot(dist, XY, ND, rho, delta,ordrho,dc,nneigh, rhomin,deltamin):
             f.show()
             return()
 
-    while 1:
-        f.show()
-        cid = f.canvas.mpl_connect('button_press_event', onclick)
+    
+    while 1:                
         print('\n\nDrag the mouse pointer at a cutoff position in figure DECISION GRAPH and press   OR   Press key n to quit')
+        cid = f.canvas.mpl_connect('button_press_event', onclick)
+        f.show()
         nID = input()
         if nID=='n':
             f.canvas.mpl_disconnect(cid)
