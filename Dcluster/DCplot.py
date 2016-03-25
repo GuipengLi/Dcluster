@@ -25,7 +25,7 @@ def plot2(axarr,rho, delta,cmap,cl,icl,XY,NCLUST):
     axarr[1].scatter(np.arange(len(rho))+1, -np.sort(-rho*delta), alpha=1,c='white')
     for i in range(NCLUST):
         axarr[0].scatter(rho[icl[i]], delta[icl[i]], alpha=0.8, c=cmap[i])
-        axarr[1].scatter(i+1, -np.sort(-rho[icl[i]]*delta[icl[i]]), alpha=0.8,c=cmap[i])
+        axarr[1].scatter(i+1, rho[icl[i]]*delta[icl[i]], alpha=0.8,c=cmap[i])
     axarr[2].set_title('2D multidimensional scaling')
     axarr[2].scatter( XY[:,0],  XY[:,1],alpha=0.8,c=cmap[list(cl)])
     axarr[2].set_xlabel('X')
