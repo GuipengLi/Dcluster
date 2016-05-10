@@ -37,7 +37,7 @@ Contact
 -------
 Author: Guipeng Li
 
-Email:  guipeng.lee@gmail.com
+Email:  guipeng.lee(AT)gmail.com
 
 
 Refences
