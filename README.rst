@@ -40,6 +40,6 @@ Author: Guipeng Li
 Email:  guipeng.lee(AT)gmail.com
 
 
-Refences
+References
 --------
 Rodriguez, A., & Laio, A. (2014). Clustering by fast search and find of density peaks. Science, 344(6191), 1492-1496. (`paper <http://www.sciencemag.org/content/344/6191/1492.full>`_)
